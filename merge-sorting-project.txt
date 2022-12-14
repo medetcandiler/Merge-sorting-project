@@ -1,0 +1,25 @@
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+			[16,21,11,8,12,22]
+		
+		[16,21,11]		    [8,12,22]
+		     
+	[16,21]            [11]	       [8,12]	      [22]	
+	
+     [16]      [21]                  [8]     [12]
+
+        [16,21]			       [8,12]			
+
+		[11,16,21]		     [8,12,22]	
+
+			 [8,11,12,16,21,22]
+
+
+Tablo'da görebildiğimiz gibi her adım sonucunda yaptığımız işlem yarıya iniyor. yani 2 ^ x = n  (n = eleman sayısı)
+yani log(n)=x kadar işlem süremiz mevcut. Fakat eğer böyle bırakırsak yanılmış oluruz. Çünkü bir farklılık var. 
+Yarıya düşürme işlemini 'n' eleman sayımız kadar gerçekleştiriyoruz. Yani Big-O gösterimimiz O(log(n).n) şeklinde
+olmuş oluyor.
